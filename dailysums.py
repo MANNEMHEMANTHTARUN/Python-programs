@@ -10,13 +10,19 @@
 #substrings
 #sortings and types
 #list coping ----------> l1=l[:]
-#zip function
 #iterotor --- next()
 #matrix(list of lists) --- adding marix and multiplication matrix , rotating matrix , transpose a matrix    
 # rotationg a string -- left rotation and rigt rotation 
 #dictionaries --intialization and updating and reading
 #combinint two list with alternative elements
-#
+#join(joiniing a lsit to string) and split
+
+#finding the number of occurence of a substring in a given string
+
+#zip function and "*"-->lists and tuples unpacking and sets ,and "**"-->for dictionaries unpacking
+
+
+
 
 
 
@@ -287,8 +293,89 @@
 # for i in range(n):
 #       b=input().split()
 #       l.update(b)
-# print(l)      
+# print(l)    
+
+#--------------  join() and spilt() -----------opposite sitring funtions
+
+
+# a="my name is hemanth"
+# print("This is the list of string a",a.split(" "))
+# b=["hi","this"]
+# s="-"
+# b=s.join(b)
+# print(b)
+
+
+# a=["happy"]*5
+# a=a+["birth day","to","you"]
+
+# # print(a)
+
+# #------------------------ zip funtion ---------
+
+# k=dict(zip([1,3,4],"abc"))
+# # p=k.values()
+# # print(*p)
+# # print(k.keys())
+
+# # print(k.items())
+# # # print(*a,sep="-")
+
+
+# for i,j in k.items():
+#       print(i)
+#       print(j)
 
 
 
 
+#finding the number of occurence of a substring in a given string
+
+# s = 'arunununghhjj'
+# sb = 'nun'
+# results = 0
+# sub_len = len(sb)
+# for i in range(len(s)):
+#     if s[i:i+sub_len] == sb:
+#         results += 1
+# print results
+
+
+
+#-------------------------sorting--------------------#
+
+
+# d={}
+
+# l=[1,2,4]
+# s="cba"
+
+# d=dict(zip(l,s))
+
+# k=list(d.keys())
+# v=list(d.values())
+
+# for (k,v) in d.items():
+#       if(k==2):
+#             d[k]="s"
+# print(d)            
+            
+
+# print(sorted(zip(s,k)))
+
+
+
+letters = ['b', 'a', 'd', 'c']
+numbers = [2, 4, 3, 1]
+data1 = list(zip(letters, numbers))
+data1
+[('b', 2), ('a', 4), ('d', 3), ('c', 1)]
+data1.sort()  # Sort by letters
+data1
+[('a', 4), ('b', 2), ('c', 1), ('d', 3)]
+data2 = list(zip(numbers, letters))
+data2
+[(2, 'b'), (4, 'a'), (3, 'd'), (1, 'c')]
+data2.sort()  # Sort by numbers
+data2
+[(1, 'c'), (2, 'b'), (3, 'd'), (4, 'a')]
