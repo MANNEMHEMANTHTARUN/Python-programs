@@ -110,3 +110,12 @@
 # s=s[::-1]
 # print(s)
 
+
+# s="hi this is hemanth"
+# k=s.join("-")
+# print(k)
+
+
+a="python"
+b=a.split("y")
+print(a)

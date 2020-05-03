@@ -8,6 +8,7 @@
 #string reverse
 #removing duplicates from list and string
 #substrings
+#perutations and combinations
 #sortings and types
 #list coping ----------> l1=l[:]
 #zip function
@@ -16,7 +17,7 @@
 # rotationg a string -- left rotation and rigt rotation 
 #dictionaries --intialization and updating and reading
 #combinint two list with alternative elements
-#
+#any and all functons 
 
 
 
@@ -138,6 +139,18 @@
 #     sub.append(l[i:i+3])
 # print(sub)    
     
+                  #-------------------matrix reading ---------
+# s=int(input())
+
+# m=[ list(map(int,input().split())) for i in range(s)]
+
+
+
+# print(*m)
+
+
+
+
       #------------GCD and LCM----------
 
 # from math import gcd
@@ -201,6 +214,30 @@
 #             sub.append(l[i:j])
 # print(sub)
 # print()
+
+
+# from itertools import permutations as p
+# from itertools import combinations as c
+# from itertools import combinations_with_replacement as cr
+
+# # l=[1,5,6,8]
+# # l=[1,6,-1,5,-2,7,2,10]
+# # k=[]
+# # # print(list(p(l)))
+# # # print("combinations here")
+
+# # for i in range(1,len(l)+1):
+# #     m=list(c(l,i))
+# #     k=k+m
+    
+# # k1=[x for x in k if sum(x)==6]    
+# # print(k1)    
+    
+# #pritnting conminations with replacements
+
+# s="abc"
+# print(list(c(s,2)))
+# print(list(cr(s,2)))
 
 #-------------------substrings for perticular lengths-----------
 
@@ -288,6 +325,21 @@
 #       b=input().split()
 #       l.update(b)
 # print(l)      
+
+
+#------all and any functions
+# string =input()
+# print(any(c.isalnum() for c in string))
+# print(any(c.isalpha() for c in string))
+# print(any(c.isdigit() for c in string))
+# print(any(c.islower() for c in string))
+# print(any(c.isupper() for c in string))
+
+
+#------zip functions---
+# l=[[1,2,3],[3,4,5],[7,8,9]]
+# l2=list(zip(*l))
+# print([ list(i) for i in l2])
 
 
 
