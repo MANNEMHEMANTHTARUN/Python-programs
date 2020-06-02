@@ -1,4 +1,5 @@
 #square root and nth root
+#types of reading
 #prime numbers
 #factorial 
 #fibonocy
@@ -16,18 +17,9 @@
 # rotationg a string -- left rotation and rigt rotation 
 #dictionaries --intialization and updating and reading
 #combinint two list with alternative elements
-<<<<<<< HEAD
 #any and all functons 
-=======
-#join(joiniing a lsit to string) and split
-
-#finding the number of occurence of a substring in a given string
-
-#zip function and "*"-->lists and tuples unpacking and sets ,and "**"-->for dictionaries unpacking
-
-
-
->>>>>>> 451da657d405d7d4cf16dc6d64fb4c67775304a7
+#pattern sums
+#----leap year----
 
 
 
@@ -48,6 +40,12 @@
 # k=int(input())
 # print(int(math.sqrt(n)))
 # print(math.ceil(n**(1/k)))
+
+#------typers of  reading inputs
+a=int(input())
+a,b=input().split()
+a,*b=input().split()
+print(a,b)
 
             #----------------prime numbers-----------
 # n=int(input())
@@ -251,7 +249,14 @@
 
 #-------------------substrings for perticular lengths-----------
 
-
+# a=[1,2,3,4,5,6,7,8]
+# k=[]
+# for i in range(len(a)):
+#       for j in range(i+1,len(a)+1):
+#             m=a[i:j]
+#             if(len(m)==3):
+#                   k.append(m)
+# print(k)
 
 
 
@@ -421,17 +426,109 @@
 
 
 
-letters = ['b', 'a', 'd', 'c']
-numbers = [2, 4, 3, 1]
-data1 = list(zip(letters, numbers))
-data1
-[('b', 2), ('a', 4), ('d', 3), ('c', 1)]
-data1.sort()  # Sort by letters
-data1
-[('a', 4), ('b', 2), ('c', 1), ('d', 3)]
-data2 = list(zip(numbers, letters))
-data2
-[(2, 'b'), (4, 'a'), (3, 'd'), (1, 'c')]
-data2.sort()  # Sort by numbers
-data2
-[(1, 'c'), (2, 'b'), (3, 'd'), (4, 'a')]
+# letters = ['b', 'a', 'd', 'c']
+# numbers = [2, 4, 3, 1]
+# data1 = list(zip(letters, numbers))
+# data1
+# [('b', 2), ('a', 4), ('d', 3), ('c', 1)]
+# data1.sort()  # Sort by letters
+# data1
+# [('a', 4), ('b', 2), ('c', 1), ('d', 3)]
+# data2 = list(zip(numbers, letters))
+# data2
+# [(2, 'b'), (4, 'a'), (3, 'd'), (1, 'c')]
+# data2.sort()  # Sort by numbers
+# data2
+# [(1, 'c'), (2, 'b'), (3, 'd'), (4, 'a')]
+
+
+#--pattern sums------#
+# a=int(input())
+# for i in range(a):
+#       for j in range(i+1):
+#             print(j,end="")
+#       print()      
+
+
+# a=int(input())
+# for i in range(a):
+#       for j in range(i+1):
+#             print("*",end='')
+#       print()      
+
+
+# a=int(input())
+# s=1
+# m=1
+# for i in range(1,a+1):
+#       print(" "*(a-i),end="")
+#       print("*"*i,end="")      
+#       print()      
+
+#--leap year---
+# a=int(input())
+# if(a%4==0):
+#       if(a%100==0):
+#             if(a%400==0):
+#                   print("Leap year")
+#             else:
+#                   print("not a leap year")
+#       else:
+#             print("leap year")
+# else:
+#       print("not a leap year")                              
+
+
+
+# n=int(input())
+# k=1
+# for i in range(n):
+#       for j in range(1,i+2):
+#             print(j,end="")
+#             k=k+1
+#       print()      
+
+
+
+# n=int(input())
+# l=[]
+# for i in range(2,n):
+#       flag=0
+#       for j in range(2,i):
+#             if(i%j==0):
+#                   flag=1
+#                   break
+#       if(flag==0):
+#             l.append(i)
+# c=2
+# for i in range(1,len(l)):
+#       c=c+l[i]
+#       if c in l:
+#             print(c)
+
+
+
+# n=int(input())
+# for i in range(n):
+#       for j in range(i+1):
+#             m=0
+#             print(j+m,end=" ")
+#             if(j%2==0):
+#                   m=m*2
+#       print()
+      
+# n=int(input())
+# print(1)
+# for i in range(n):
+#       for j in range(i+1,-1,-1):
+#             print(2**j,end=" ")
+#       print()      
+
+
+
+n=int(input())
+for i in range(n):
+      for j in range(2**(i)):
+            print("*",end="")
+      print()      
+

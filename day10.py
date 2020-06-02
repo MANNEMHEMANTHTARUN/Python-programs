@@ -133,7 +133,8 @@
 # print(sum(k)-sum(n))
 
 #------transpose of matrx----
-l=[[1,2,3],[3,4,5],[7,8,9]]
-l2=list(zip(*l))
-print([ list(i) for i in l2])
+# l=[[1,2,3],[3,4,5],[7,8,9]]
+# l2=list(zip(*l))
+# print([ list(i) for i in l2])
+
 
