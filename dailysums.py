@@ -15,12 +15,13 @@
 # rotationg a string -- left rotation and rigt rotation 
 #dictionaries --intialization and updating and reading
 #combinint two list with alternative elements
-#join(joiniing a lsit to string) and split
+#join(joiniing a list to string) and split
 
 #finding the number of occurence of a substring in a given string
 
 #zip function and "*"-->lists and tuples unpacking and sets ,and "**"-->for dictionaries unpacking
 
+#leap year
 
 
 
@@ -143,7 +144,20 @@
 # for i in range(0,len(l),3):
 #     sub.append(l[i:i+3])
 # print(sub)    
-    
+
+
+           #------------------matrix multiplication-----------
+           
+# import numpy as np 
+# b=np.array([[2,10,20],[80,43,31],[22,43,10]])
+# print(b)
+# print(np.amin(b,0))
+# print(np.amax(b,0))
+# print(np.amin(b,1))
+# print(np.amax(b,1))           
+           
+           
+               
       #------------GCD and LCM----------
 
 # from math import gcd
@@ -209,9 +223,14 @@
 # print()
 
 #-------------------substrings for perticular lengths-----------
-
-
-
+# a=list(map(int,input().split()))
+# k=int(input())
+# l=[]
+# for i in range(0,len(a),k):
+#       s=a[i:i+k]
+#       l.append(s)
+# print(l)      
+      
 
 
 
@@ -365,17 +384,62 @@
 
 
 
-letters = ['b', 'a', 'd', 'c']
-numbers = [2, 4, 3, 1]
-data1 = list(zip(letters, numbers))
-data1
-[('b', 2), ('a', 4), ('d', 3), ('c', 1)]
-data1.sort()  # Sort by letters
-data1
-[('a', 4), ('b', 2), ('c', 1), ('d', 3)]
-data2 = list(zip(numbers, letters))
-data2
-[(2, 'b'), (4, 'a'), (3, 'd'), (1, 'c')]
-data2.sort()  # Sort by numbers
-data2
-[(1, 'c'), (2, 'b'), (3, 'd'), (4, 'a')]
+# letters = ['b', 'a', 'd', 'c']
+# numbers = [2, 4, 3, 1]
+# data1 = list(zip(letters, numbers))
+# data1
+# [('b', 2), ('a', 4), ('d', 3), ('c', 1)]
+# data1.sort()  # Sort by letters
+# data1
+# [('a', 4), ('b', 2), ('c', 1), ('d', 3)]
+# data2 = list(zip(numbers, letters))
+# data2
+# [(2, 'b'), (4, 'a'), (3, 'd'), (1, 'c')]
+# data2.sort()  # Sort by numbers
+# data2
+# [(1, 'c'), (2, 'b'), (3, 'd'), (4, 'a')]
+
+#----leap year---- 
+# a=int(input())
+# if(a%4==0):
+#       if(a%100==0):
+#             if(a%400==0):
+#                   print("leap year")
+#             else:
+#                   print("not a leap year")
+#       else:
+#             print("leap year")
+# else:
+#       print("not a leap year") 
+
+
+# def hemu(l):
+#       return " ".join(l[i] for i in range(0,len(l)))
+# l=list(map(str,input().split()))
+# print(hemu(l))
+                                   
+
+
+
+
+# for i in range(n):
+#     k=input().split()
+#     a=k[0]
+#     b=k[1]
+#     if(a=="add"):
+#         l.append(b)    
+#     elif(a=="find"):
+#         count=0
+#         for i in l:
+#             if(b[0]==i[0]):
+                
+#                 if b in i:
+#                     count=0
+#                     count=count+1
+# print(l)         
+
+
+
+
+           
+        
